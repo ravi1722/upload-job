@@ -1,0 +1,13 @@
+.first{
+    width: 50%;
+    height: 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.second{
+    height: 20px;
+    background-color: #009200;
+    color: #fff;
+   
+}

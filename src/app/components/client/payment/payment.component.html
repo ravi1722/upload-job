@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <button class="btn btn-success" id="logout_button" (click)="logout()">Log Out</button><br><br><br>
+    <div class="first">
+        <div [ngStyle] = "{'width.%': width}" class="second">
+         {{width}}%
+         </div>
+     </div><br>
+        <h2>Stripe Checkout</h2>
+        <button (click)="pay()" class="btn btn-success btn-block" id="pay">Click to Pay Rs 1000</button><br><br>
+        <button class="btn btn-success" id="next_button"  [disabled]="is_edit" (click)="next()">Next</button>
+</div>

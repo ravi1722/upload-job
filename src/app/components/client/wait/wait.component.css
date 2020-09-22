@@ -1,0 +1,33 @@
+.container-fluid {
+    position: absolute;
+    left: 30%;
+    width: 70%;
+    top: 10%;
+}
+button#logout_button{
+    position: absolute;
+    left: 40%;
+    width: 10%;
+}
+
+.first{
+    width: 50%;
+    height: 20px;
+    background-color: #ddd;
+    text-align: center;
+}
+
+.second{
+    height: 20px;
+    background-color: #009200;
+    color: #fff;
+   
+}
+
+div.box{
+    width: 460px;
+    height: 300px;
+    background: #e2e1e0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    padding: 75px;
+}

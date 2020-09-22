@@ -1,0 +1,16 @@
+.container-fluid {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+
+.form-control{
+    width: 150% !important;
+}
+
+
+#login_button{
+    margin-left: 20px;
+    width: 75px;
+}

@@ -1,0 +1,32 @@
+<button class="btn btn-success" id="logout_button" (click)="logout()">Log Out</button>
+  
+<h1 style="text-align: center;">User Details</h1>
+  <table class="table">
+    <thead class="text-center">
+      <tr class="bg-dark text-white">
+          <td> User ID </td>
+          <td> Company Name / Your Name </td>
+          <td> Email </td>
+          <td> Mobile number </td>
+          <td> Remarks </td>
+          <td>User Attaced Files </td>
+          <td> Upload File </td>
+          <td> Action </td>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr *ngFor="let user of this.users">
+          <td>{{user.user_id}}</td>
+          <td>{{user.user_name}}</td>
+          <td>{{user.user_email}}</td>
+          <td>{{user.user_mobile}}</td>
+          <td>{{user.user_remarks}}</td>
+          <td><button class="btn btn-danger text-white" (click)="view(user.whole_id)" target="_blank">view</button></td>
+          <td><input type="file" class="form-control" id="file" (change) = "onchange($event)"></td>
+          <td><button class="btn btn-success" (click)="submit(user.whole_id);">Submit File</button> / 
+            <button class="btn btn-danger text-white" (click)="deleteUser(user)">Delete Job</button></td>
+      </tr>
+    </tbody>
+    </table>
+     
+  

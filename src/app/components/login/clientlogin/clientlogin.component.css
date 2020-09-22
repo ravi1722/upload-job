@@ -1,0 +1,15 @@
+.container-fluid {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+}
+
+#register{
+    margin-left: 20px;
+    width: 75px;
+}
+
+
+.form-control{
+    width: 150% !important;
+}

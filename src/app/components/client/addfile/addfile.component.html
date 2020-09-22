@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <button class="btn btn-success" id="logout_button" (click)="logout()">Log Out</button><br><br><br>
+  <div class="first">
+    <div [ngStyle] = "{'width.%': width}" class="second">
+     {{width}}%
+     </div>
+ </div><br>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="file">Upload Your Files here:</label>
+          <input type="file" (change) = "onchange($event)" class="form-control" id="file"><br><br>
+          <button class="btn btn-success">Submit</button>
+        </div>
+        </form>
+        <button class="btn btn-success" id="next_button"  [disabled]="is_edit" (click)="next()">Next</button>
+</div>

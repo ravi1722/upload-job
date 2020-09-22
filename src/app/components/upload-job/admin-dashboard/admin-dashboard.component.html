@@ -1,0 +1,38 @@
+
+<button class="btn btn-success" id="logout_button" (click)="logout()">Log Out</button>
+<h1 style="text-align: center;">User Details</h1>
+<table class="table">
+<thead class="text-center">
+  <tr class="bg-dark text-white">
+      <td> R. No</td>
+      <td> Company Name / Your Name </td>
+      <td> Email </td>
+      <td> Mobile number </td>
+      <td> Job Type </td>
+      <td> Remarks </td>
+      <td> Assign To </td>
+      <td> Action </td>
+  </tr>
+</thead>
+<tbody class="text-center">
+  <tr *ngFor="let user of this.users">
+      <td>{{user.id}}</td>
+      <td>{{user.yourname}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.mobile}}</td>
+      <td>{{user.jobs}}</td>
+      <td>{{user.remarks}}</td>
+      <td><select id="assign" name="assign" (change) = "onchange($event)">
+        <option value="" selected="selected">Select Staff</option>
+        <option value="staff1">Staff1</option>
+        <option value="staff2">Staff2</option>
+        <option value="staff3">Staff3</option>
+        <option value="staff4">Staff4</option>
+        <option value="staff5">Staff5</option>
+      </select></td>
+      <td><button class="btn btn-success" [disabled]="clicked" (click)="assign(user.id); clicked = true;">Assign</button> / 
+      <button class="btn btn-danger text-white" (click)="deleteUser(user)">Delete Job</button></td>
+  </tr>
+</tbody>
+</table>
+ 
